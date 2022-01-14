@@ -1,10 +1,19 @@
 # dbt
-Learning dbt foundamentals: https://courses.getdbt.com/courses/take/fundamentals/lessons/30210802-welcome
 
-Commands:
+Transform layer sitting on the data platform (being it Snowflake, AWS, Databricks) and takes care of tranformation, quality and validation. Represents transofrmations in form of DAGs and auto-creates documentation on top of transfomartions.
+
+
+![image](https://user-images.githubusercontent.com/39126832/149541428-18bf8ee5-d9b9-4813-82ff-80787966601e.png)
+
+
+
+## Commands:
 
 dbt run
 
 dbt test
 
 dbt docs generate
+
+
+Source = official course @dbt: https://courses.getdbt.com/courses/take/fundamentals/lessons/30210802-welcome
