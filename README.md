@@ -9,6 +9,21 @@ Language used in the development environment: SQL and/or Jinja
 ![image](https://user-images.githubusercontent.com/39126832/149541428-18bf8ee5-d9b9-4813-82ff-80787966601e.png)
 
 
+## My personal setup used for this project:
+
+1. My personal Heroku app hosting a PostgreSQL database
+2. Sample data from dbt loaded from s3 living in the above mentioned Postgres db
+
+http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/jaffle_shop_orders.csv
+
+http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/jaffle_shop_customers.csv
+
+http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/stripe_payments.csv
+
+3. Git integration with the dbt cloud service
+
+4. Data modelling directly in dbt cloud (1 model per 1 output table)
+
 
 ## Commands:
 
