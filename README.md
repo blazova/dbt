@@ -4,5 +4,7 @@ Learning dbt foundamentals: https://courses.getdbt.com/courses/take/fundamentals
 Commands:
 
 dbt run
+
 dbt test
+
 dbt docs generate
