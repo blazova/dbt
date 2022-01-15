@@ -6,9 +6,9 @@ with payments as (
         paymentmethod as payment_method,
         status,
         amount,
-        created
+        created as created_at
 
-    from d4t93bhmgqavk5.stripe.payments
+    from {{ source('stripe', 'payments') }}
 )
 
 select * from payments
