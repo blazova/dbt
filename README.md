@@ -15,48 +15,6 @@ cheap storage and exceptional computing power).
 
 ![image](https://user-images.githubusercontent.com/39126832/149541428-18bf8ee5-d9b9-4813-82ff-80787966601e.png)
 
-## Naming convention
-
-*Sources* = the raw data loaded in the db (e.g. with Stitch or Fivetran)
-
-*Staging models* = built one to one with the undrlying source tables
-
-*Intermediate models* = bw staging and final tables
-
-*Fact models* = ocurring evens such as orders, events, clicks
-
-*Dimension models* = represent things that are and don't change too much such as products or customers
-
-
-##Specifics of dbt
-
-1. the `ref` function - allows to build dependencies between models in a flexible way that can be shared in a common code base.
-
-Example: `{{ ref('stg_customers') )}` compiles to analytics.dbt_jsmith.stg_customers.
-
-The ref function also builds a lineage graph. dbt is able to determine dependencies between models and takes those into account to build models in the correct order.
-
-2. materialization
-The materialization can be configured as a table with the following configuration block at the top of the model file:
-
-"""
-{{ config(
-materialized='table'
-) }}
-"""
-
-The same applies for configuring a model as a view:
-
-"""
-{{ config(
-materialized='view'
-) }}
-"""
-
-3. Check source freshness
-
-![image](https://user-images.githubusercontent.com/39126832/149626148-4229c741-5ef8-4a93-bbab-784e39c045b1.png)
-
 
 ## My personal setup used for this project:
 
