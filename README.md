@@ -9,11 +9,14 @@ Transform layer sitting on the data platform (being it Snowflake, AWS, Databrick
 
 ## Commands:
 
-dbt run
+- `dbt run`
+- `dbt test`
+- `dbt test --select test_type:generic` to run only generic tests in your project.
+- `dbt test --select test_type:singular`
+- `dbt docs generate`
+- `dbt source freshness`
 
-dbt test
 
-dbt docs generate
+More documentation on the project's [wiki](https://github.com/blazova/dbt/wiki)
 
-
-Source = official course @dbt: https://courses.getdbt.com/courses/take/fundamentals/lessons/30210802-welcome
+Official dbt course [here](https://courses.getdbt.com/courses/take/fundamentals/lessons/30210802-welcome)
