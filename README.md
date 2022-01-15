@@ -8,11 +8,23 @@ Language used in the development environment: SQL and/or Jinja.
 
 ## Goal and example case of this project:
 
-Modelling a table `dim_customers` that uses two other modelled views - `stg_customers`and `stg_orders`.
+Modelling a table `dim_customers` that uses two other modelled views - `stg_customers`and `stg_orders`. Despite the popular modelling techniques such as Star Schema, Kimball or Data Vault, Dbt's first approach is denormalized (agile) modelling that allows for a better readability and optimises time to deliver reports to the business (thanks to the modern technologies allowing for a very cheap storage and exceptional computing power).
 
 
 
 ![image](https://user-images.githubusercontent.com/39126832/149541428-18bf8ee5-d9b9-4813-82ff-80787966601e.png)
+
+## Naming convention
+
+*Sources* = the raw data loaded in the db (e.g. with Stitch or Fivetran)
+
+*Staging models* = built one to one with the undrlying source tables
+
+*Intermediate models* = bw staging and final tables
+
+*Fact models* = ocurring evens such as orders, events, clicks
+
+*Dimension models* = represent things that are and don't change too much such as products or customers
 
 
 ## My personal setup used for this project:
