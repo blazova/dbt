@@ -27,6 +27,23 @@ Modelling a table `dim_customers` that uses two other modelled views - `stg_cust
 *Dimension models* = represent things that are and don't change too much such as products or customers
 
 
+The materialization can be configured as a table with the following configuration block at the top of the model file:
+
+"""
+{{ config(
+materialized='table'
+) }}
+"""
+
+The same applies for configuring a model as a view:
+
+"""
+{{ config(
+materialized='view'
+) }}
+"""
+
+
 ## My personal setup used for this project:
 
 1. My personal Heroku app hosting a PostgreSQL database
