@@ -16,6 +16,15 @@ Transform layer sitting on the data platform (being it Snowflake, AWS, Databrick
 - `dbt docs generate`
 - `dbt source freshness`
 
+## Testing:
+
+`src_jaffle_shop.yml` source configuration + source tests
+
+`stg_jaffle_shop.yml` generic model tests
+
+`tests/assert_positive_total_for_payments.sql` singular table test
+
+
 
 More documentation on the project's [wiki](https://github.com/blazova/dbt/wiki)
 
