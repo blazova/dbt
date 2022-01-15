@@ -4,7 +4,13 @@ Transformation layer sitting on top of the data platform (being it Snowflake, AW
 
 Transofrmations and their rdependencies (lineage) are represented by DAGs.
 
-Language used in the development environment: SQL and/or Jinja
+Language used in the development environment: SQL and/or Jinja.
+
+## Goal and example case of this project:
+
+Modelling a table `dim_customers` that uses two other modelled views - `stg_customers`and `stg_orders`.
+
+
 
 ![image](https://user-images.githubusercontent.com/39126832/149541428-18bf8ee5-d9b9-4813-82ff-80787966601e.png)
 
@@ -12,7 +18,7 @@ Language used in the development environment: SQL and/or Jinja
 ## My personal setup used for this project:
 
 1. My personal Heroku app hosting a PostgreSQL database
-2. Sample data from dbt loaded from s3 living in the above mentioned Postgres db
+2. Sample data from dbt loaded from s3 living in the above mentioned Postgres db (using PGAdmin and cli)
 
 http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/jaffle_shop_orders.csv
 
