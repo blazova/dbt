@@ -13,6 +13,8 @@ Despite the popular modelling techniques such as Star Schema, Kimball or Data Va
 allows for a better readability and optimises time to deliver reports to the business (thanks to the modern technologies allowing for a very 
 cheap storage and exceptional computing power).
 
+![image](https://user-images.githubusercontent.com/39126832/149624854-067c7abe-980a-4231-9d4f-5f00660eb119.png)
+
 
 ![image](https://user-images.githubusercontent.com/39126832/149541428-18bf8ee5-d9b9-4813-82ff-80787966601e.png)
 
