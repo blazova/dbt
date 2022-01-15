@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+    - name: jaffle_shop
+      database: d4t93bhmgqavk5
+      schema: jaffle_shop
+      tables:
+        - name: customers
+        - name: orders
