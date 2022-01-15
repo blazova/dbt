@@ -29,23 +29,28 @@ http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/stripe_payments.csv
 
 3. Git integration with the dbt cloud service
 
-4. Data modelling directly in dbt cloud (1 model per 1 output table)
+4. Data modelling, testign and documentation directly in dbt cloud (1 model per 1 output table)
 
 
-## Commands:
+## dbt Development
 
-*dbt run*
+- `dbt run`
+- `dbt test`
+- `dbt test --select test_type:generic` to run only generic tests in your project.
+- `dbt test --select test_type:singular`
+- `dbt docs generate`
+- `dbt source freshness`
 
-Example: If dbt run -s staging will run all models that exist in models/staging. (Note: This can also be applied for dbt test as well which will be covered later.)
+## Testing:
+
+`src_jaffle_shop.yml` source configuration + source tests
+
+`stg_jaffle_shop.yml` generic model tests
+
+`tests/assert_positive_total_for_payments.sql` singular table test
 
 
-*dbt test*
 
-*dbt docs generate*
+More documentation on the project's [wiki](https://github.com/blazova/dbt/wiki)
 
-
-## Connecting to different DWHs 
-
-Documentation [here](https://docs.getdbt.com/docs/dbt-cloud/cloud-configuring-dbt-cloud/connecting-your-database)
-
-Source = official course @dbt [here](https://courses.getdbt.com/courses/take/fundamentals/lessons/30210802-welcome)
+Official dbt course [here](https://courses.getdbt.com/courses/take/fundamentals/lessons/30210802-welcome)
