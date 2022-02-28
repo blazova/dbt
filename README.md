@@ -40,6 +40,7 @@ http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/stripe_payments.csv
 - `dbt test --select test_type:singular`
 - `dbt docs generate`
 - `dbt source freshness`
+- `dbt deps` installs packages and their dependencies
 
 ## Testing:
 
