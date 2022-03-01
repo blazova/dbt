@@ -4,7 +4,7 @@ Transformation layer sitting on top of the data platform (being it Snowflake, AW
 
 Transofrmations and their rdependencies (lineage) are represented by DAGs.
 
-Language used in the development environment: SQL and/or Jinja.
+Language used in the development environment: SQL and/or Jinja (python based, used in dbt to write functional SQL, docs [here](https://jinja.palletsprojects.com/en/3.0.x/templates/), jinja parser [here](https://cryptic-cliffs-32040.herokuapp.com/)).
 
 ## Goal and example case of this project:
 
