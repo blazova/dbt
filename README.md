@@ -4,14 +4,7 @@ Transformation layer sitting on top of the data platform (being it Snowflake, AW
 
 Transofrmations and their rdependencies (lineage) are represented by DAGs.
 
-Language used in the development environment: SQL and/or Jinja (python based, used in dbt to write functional SQL, docs [here](https://jinja.palletsprojects.com/en/3.0.x/templates/), jinja parser [here](https://cryptic-cliffs-32040.herokuapp.com/)). There are three Jinja delimiters to be aware of in Jinja:
-
-- `{% … %}` for statements. These perform any function programming such as setting a variable or starting a for loop.
-
-- `{{ … }}` expressions. These will print text to the rendered file. In most cases in dbt, this will compile your Jinja to pure SQL.
-
-- `{# … #}` for comments. This allows us to document our code inline. This will not be rendered in the pure SQL that you create when you run dbt compile or dbt run.
-
+Language used in the development environment: SQL and/or Jinja (python based, used in dbt to write functional SQL, docs [here](https://jinja.palletsprojects.com/en/3.0.x/templates/), jinja parser [here](https://cryptic-cliffs-32040.herokuapp.com/)).
 
 ## Goal and example case of this project:
 
